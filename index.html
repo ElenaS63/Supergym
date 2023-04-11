@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Фитнес центр SUPERGYM</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Фитнес центр SUPERGYM">
+  <meta name="keywords" content="Фитнес, спорт, качалка, фитнес клуб">
+  <link rel="preload" href="./fonts/roboto-condensed-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/roboto-condensed-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/roboto-condensed-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/alumni-sans-semibold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/alumni-sans-extrabold.woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="./favicon/icon.ico" type="image/svg+xml">
+  <link rel="icon" href="./favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./favicon/apple-icon-180x180.png">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <nav class="header__nav">
+          <a class="header__logo-link" href="index.html" aria-label="Перейти на главную страницу сайта">
+            <svg aria-hidden="true" focusable="false" width="122" height="44">
+              <use href="./img/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <a class="header__tel-link" href="tel:88005555555" aria-label="Позвонить нам по номеру">
+            <span>8-800-555-55-55</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="promo">
+        <div class="promo__container">
+          <div class="promo__content-wrapper">
+            <div class="promo__description">
+              <h1>Фитнес <br> центр</h1>
+              <h2>Омск</h2>
+              <ul class="promo__list">
+                <li class="promo__item">
+                  <span>Тренажёрный зал</span>
+                </li>
+                <li class="promo__item">
+                  <span>Групповые занятия</span>
+                </li>
+                <li class="promo__item">
+                  <span>Кардио-зона</span>
+                </li>
+              </ul>
+              <a class="promo__link btn" href="#catalog">
+                Купить абонемент
+              </a>
+            </div>
+            <div class="promo__img-wrapper">
+              <picture>
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="./img/promo-tablet@1x.webp 1x, ./img/promo-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/promo-desktop@1x.webp 1x, ./img/promo-desktop@2x.webp 2x">
+                <source media="(max-width: 1199px)" srcset="./img/promo-tablet@1x.jpg 1x, ./img/promo-tablet@2x.jpg 2x">
+                <img src="./img/promo-desktop@1x.jpg" srcset="./img/promo-desktop@2x.jpg 2x" width="500" height="556"
+                  alt="Спортсмен в костюме супермена.">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <nav class="footer__nav">
+          <a class="footer__logo-link" href="index.html" aria-label="Перейти на главную страницу сайта">
+            <svg aria-hidden="true" focusable="false" width="88" height="30">
+              <use href="./img/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#!">Услуги</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#catalog">Абонементы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#stock">Акции</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#coaches">Тренеры</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#!">Расписание</a>
+            </li>
+          </ul>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#!" aria-label="Перейти на страницу в социальной сети Вконтакте">
+                <svg aria-hidden="true" focusable="false" width="25" height="25">
+                  <use href="./img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#!" aria-label="Перейти на страницу в социальной сети Одноклассники">
+                <svg aria-hidden="true" focusable="false" width="25" height="25">
+                  <use href="./img/sprite.svg#icon-ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#!" aria-label="Перейти на страницу на платформе Реддит">
+                <svg aria-hidden="true" focusable="false" width="25" height="25">
+                  <use href="./img/sprite.svg#icon-reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
