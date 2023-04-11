@@ -1,0 +1,141 @@
+.footer {
+  width: 100%;
+  background-color: $color-black-russian;
+}
+
+.footer__container {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-top: 42px;
+  padding-bottom: 35px;
+
+  @media (max-width: $tablet-width) {
+    padding: 47px 39px 44px 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 49px 15px 59px 10px;
+  }
+}
+
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $mobile-width) {
+    flex-flow: column nowrap;
+  }
+}
+
+.footer__logo-link {
+  color: $color-default-white;
+  margin-right: auto;
+
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+    position: absolute;
+    left: 15px;
+  }
+
+  svg {
+    @media (max-width: $tablet-width) {
+      width: 82px;
+      height: 18px;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 68px;
+      height: 15px;
+    }
+  }
+}
+
+.footer__list {
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  column-gap: 40px;
+  row-gap: 10px;
+  margin-right: auto;
+  transform: translateX(5px);
+
+  @media (max-width: $tablet-width) {
+    column-gap: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    column-count: 2;
+    column-gap: 75px;
+    margin-right: 0;
+    margin-bottom: 10px;
+
+    &::before {
+      content: "";
+      display: list-item;
+      height: 19px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.footer__item {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__link {
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-default-white;
+  display: inline-block;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.footer__social-list {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 11px;
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: repeat(6, max-content);
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+}
+
+.footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logo-link,
+.footer__link,
+.footer__social-link {
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px $color-golden-yellow;
+  }
+
+  &:active {
+    box-shadow: none;
+    opacity: 1;
+  }
+}

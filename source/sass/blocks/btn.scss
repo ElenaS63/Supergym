@@ -1,18 +1,25 @@
 .btn {
-  display: inline-flex;
-  padding: 10px 20px;
+  display: inline-block;
+  padding: 20px 45px;
+  color: $color-sapphire;
 
-  color: $color-default-white;
-
-  background-color: $color-neon-blue;
-  border: none;
+  background-color: transparent;
+  border: 2px solid $color-sapphire;
   cursor: pointer;
+  user-select: none;
 
-  transition: opacity $trans-default;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  // transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
-  }
+  // &--red {
+  //   background-color: $color-torch-red;
+  // }
 
   &:disabled {
     opacity: 0.5;
@@ -20,7 +27,7 @@
     pointer-events: none;
   }
 
-  @include hover-focus {
-    opacity: 0.8;
-  }
+  // @include hover-focus {
+  //   opacity: 0.8;
+  // }
 }
