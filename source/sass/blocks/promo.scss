@@ -1,6 +1,6 @@
 .promo {
   min-height: 658px;
-  background-image: $red-to-blue;
+  background-image: $promo-red-to-blue;
 
   @media (max-width: $tablet-width) {
     min-height: 554px;
@@ -8,23 +8,6 @@
 
   @media (max-width: $mobile-width) {
     min-height: 491px;
-  }
-}
-
-.promo__container {
-  width: 100%;
-  min-width: 320px;
-  max-width: 1160px;
-  margin: 0 auto;
-
-  @media (max-width: $tablet-width) {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding-left: 13px;
-    padding-right: 13px;
   }
 }
 
@@ -145,27 +128,10 @@
 .promo__link {
   grid-column: 2/3;
   grid-row: 3/4;
-  border: 4px solid $color-default-white;
-  color: $color-default-white;
   place-self: start;
   margin-left: 14px;
   padding-left: 54px;
   padding-right: 54px;
-
-  &:hover {
-    color: $color-sapphire;
-    background-color: $color-default-white;
-    opacity: 0.7;
-  }
-
-  &:focus-visible {
-    outline: none;
-    border-color: $color-golden-yellow;
-  }
-
-  &:active {
-    opacity: 1;
-  }
 
   @media (max-width: $tablet-width) {
     width: 187px;
@@ -185,6 +151,10 @@
 }
 
 .promo__img-wrapper {
+  img {
+    object-fit: cover;
+  }
+
   @media (max-width: $mobile-width) {
     display: none;
   }

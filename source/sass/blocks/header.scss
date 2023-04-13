@@ -4,28 +4,20 @@
   z-index: 1;
 }
 
-.header__container {
-  width: 100%;
-  min-width: 320px;
-  max-width: 1160px;
-  margin: 0 auto;
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 30px;
   padding-bottom: 30px;
 
   @media (max-width: $tablet-width) {
     padding-top: 34px;
-    padding-left: 45px;
-    padding-right: 45px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
-}
-
-.header__nav {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .header__logo-link {
