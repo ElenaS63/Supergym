@@ -1,0 +1,14 @@
+.coaches__wrapper {
+  padding-top: 50px;
+  padding-bottom: 131px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 110px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 30px;
+    padding-bottom: 70px;
+  }
+}

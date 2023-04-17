@@ -1,5 +1,5 @@
 .sale__wrapper {
-  padding-top: 100px;
+  padding-top: 96px;
   padding-bottom: 100px;
 
   color: $color-resolution-blue;
@@ -9,8 +9,12 @@
   font-size: 16px;
   line-height: 23px;
 
+  @media (max-width: $tablet-width) {
+    padding-top: 91px;
+  }
+
   @media (max-width: $mobile-width) {
-    padding-top: 70px;
+    padding-top: 63px;
     padding-bottom: 70px;
   }
 
