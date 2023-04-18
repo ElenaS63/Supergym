@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import './modules/video/video';
 import {initTabs} from './modules/tabs/init-tabs';
+import {initSwipers} from './modules/slider/initSwipers';
 
 // ---------------------------------
 
@@ -20,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    initSwipers();
     const form = new Form();
     window.form = form;
     form.init();
