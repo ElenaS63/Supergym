@@ -1,6 +1,7 @@
-.coaches__wrapper {
+.coaches {
+  position: relative;
   padding-top: 50px;
-  padding-bottom: 131px;
+  padding-bottom: 90px;
 
   @media (max-width: $tablet-width) {
     padding-top: 50px;
@@ -10,5 +11,152 @@
   @media (max-width: $mobile-width) {
     padding-top: 30px;
     padding-bottom: 22px;
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 48px;
+    margin-left: 50px;
+    color: $color-sapphire;
+    font-family: $ff-alumni-sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+  }
+}
+
+.coaches__container {
+  max-width: 1257px;
+  margin: 0 auto;
+}
+
+.coaches__content {
+  padding: 0 47px;
+  position: relative;
+}
+
+.coaches__hidden-content {
+  display: none;
+}
+
+.coaches__item {
+  width: 260px;
+  height: 294px;
+  margin-right: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    outline: none;
+
+    .coaches__description {
+      background-color: $color-sapphire-accent;
+      padding-top: 51px;
+      place-items: start center;
+      grid-template-rows: min-content;
+    }
+
+    .coaches__hidden-content {
+      display: block;
+    }
+  }
+}
+
+.coaches__img-wrapper {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.coaches__description {
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: end center;
+  padding: 23px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  color: $color-default-white;
+  font-family: $ff-roboto-condensed;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  h3 {
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 35px;
+    color: $color-spindle;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+  }
+}
+
+.coaches__hidden-list {
+  padding-left: 48px;
+
+  li {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $color-default-white;
+      top: 7px;
+      left: -16px;
+    }
+  }
+}
+
+.coaches__button {
+  color: $color-dark-gray;
+
+  &--prev {
+    left: -9px;
+  }
+
+  &--next {
+    right: 9px;
+  }
+
+  &:hover {
+    color: $color-dark-cerulean;
+    opacity: 0.7;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px $color-torch-red;
+  }
+
+  &:active {
+    box-shadow: none;
+    opacity: 1;
   }
 }
