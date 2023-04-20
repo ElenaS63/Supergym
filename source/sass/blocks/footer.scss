@@ -7,12 +7,12 @@
 .footer__nav {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 42px;
-  padding-bottom: 35px;
+  padding-top: 41px;
+  padding-bottom: 27px;
 
   @media (max-width: $tablet-width) {
     padding-top: 47px;
-    padding-bottom: 44px;
+    padding-bottom: 41px;
   }
 
   @media (max-width: $mobile-width) {
@@ -55,7 +55,8 @@
   transform: translateX(5px);
 
   @media (max-width: $tablet-width) {
-    column-gap: 30px;
+    column-gap: 30.5px;
+    padding-top: 2px;
   }
 
   @media (max-width: $mobile-width) {
