@@ -95,7 +95,6 @@
       grid-template-rows: min-content;
 
       @media (max-width: $tablet-width) {
-
         h3 {
           margin-right: 13px;
         }
@@ -103,7 +102,6 @@
 
       @media (max-width: $mobile-width) {
         padding-top: 42px;
-
       }
     }
 
@@ -254,8 +252,4 @@
     box-shadow: none;
     opacity: 1;
   }
-}
-
---swiper-navigation-size{
-  font-size: 10px;
 }
