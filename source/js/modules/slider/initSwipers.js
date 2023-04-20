@@ -5,7 +5,6 @@ const initSwipers = () => {
       loop: true,
       slidesPerView: 'auto',
 
-
       navigation: {
         nextEl: '.coaches__button--next',
         prevEl: '.coaches__button--prev',
@@ -18,7 +17,7 @@ const initSwipers = () => {
       direction: 'horizontal',
       loop: false,
       slidesPerView: 'auto',
-      spaceBetween: 500,
+      spaceBetween: 110,
       autoHeight: true,
 
       navigation: {

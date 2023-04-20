@@ -2439,11 +2439,6 @@ dl {
   width: 100%;
 }
 
-.video iframe {
-  width: 100%;
-  height: 100%;
-}
-
 .video__button {
   position: absolute;
   top: 34.5%;
@@ -2928,12 +2923,12 @@ dl {
 }
 
 .coaches__container {
-  max-width: 1257px;
+  max-width: 1270px;
   margin: 0 auto;
 }
 
 .coaches__content {
-  padding: 0 47px;
+  padding: 0 55px;
   position: relative;
 }
 
@@ -2984,6 +2979,13 @@ dl {
   grid-row: 1/2;
 }
 
+.coaches__img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .coaches__description {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -2998,6 +3000,7 @@ dl {
   place-items: end center;
   padding: 23px;
   overflow-y: scroll;
+  scrollbar-width: none;
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -3055,11 +3058,11 @@ dl {
 }
 
 .coaches__button--prev {
-  left: -9px;
+  left: 0px;
 }
 
 .coaches__button--next {
-  right: 9px;
+  right: 0px;
 }
 
 .coaches__button:hover {
@@ -3702,6 +3705,7 @@ dl {
 .footer {
   width: 100%;
   background-color: #030a1a;
+  position: relative;
 }
 
 .footer__nav {
@@ -4060,7 +4064,30 @@ dl {
 
   .coaches {
     padding-top: 50px;
-    padding-bottom: 110px;
+    padding-bottom: 101px;
+  }
+
+  .coaches h2 {
+    text-align: center;
+    font-size: 42px;
+    line-height: 51px;
+    margin-left: 0;
+    margin-bottom: 31px;
+    margin-right: 5px;
+  }
+
+  .coaches__container {
+    max-width: 656px;
+  }
+
+  .coaches__content {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .coaches__item {
+    width: 268px;
+    margin-right: 30px;
   }
 
   .advantages__wrapper {
@@ -4564,7 +4591,7 @@ dl {
 
   .event__content-wrapper {
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 43px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
@@ -4574,8 +4601,43 @@ dl {
   }
 
   .coaches {
-    padding-top: 30px;
-    padding-bottom: 22px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+
+  .coaches h2 {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 42px;
+  }
+
+  .coaches__container {
+    max-width: 290px;
+  }
+
+  .coaches__content {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .coaches__item:hover .coaches__description,
+  .coaches__item:focus .coaches__description,
+  .coaches__item:focus-within .coaches__description {
+    padding-top: 42px;
+  }
+
+  .coaches__item {
+    width: 226px;
+    height: 274px;
+  }
+
+  .coaches__hidden-list {
+    padding-left: 27px;
+  }
+
+  .coaches__button {
+    width: 10px;
+    height: 19px;
   }
 
   .advantages__container {
@@ -4864,6 +4926,7 @@ dl {
     margin-right: 0;
     position: absolute;
     left: 15px;
+    z-index: 11;
   }
 
   .footer__logo-link svg {

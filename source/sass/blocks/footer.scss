@@ -1,6 +1,7 @@
 .footer {
   width: 100%;
   background-color: $color-black-russian;
+  position: relative;
 }
 
 .footer__nav {
@@ -29,6 +30,7 @@
     margin-right: 0;
     position: absolute;
     left: 15px;
+    z-index: 11;
   }
 
   svg {

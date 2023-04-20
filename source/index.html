@@ -104,7 +104,7 @@
                   alt="Тренажёрный зал." loading="lazy">
               </picture>
             </div>
-            <div class="gym__video-wrapper video">
+            <div class="gym__video-wrapper video" data-video-container>
               <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank" data-video-link>
                 <div class="video__img-wrapper">
                   <picture>
@@ -127,7 +127,8 @@
                   <use href="./img/sprite.svg#icon-video"></use>
                 </svg>
               </button>
-              <iframe id="iframe" class="visually-hidden" src="https://www.youtube.com/embed/9TZXsZItgdw"></iframe>
+              <div class="video__container" data-video-frame
+              data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1"></div>
             </div>
           </div>
         </div>
