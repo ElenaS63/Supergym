@@ -12,7 +12,7 @@
 
 .advantages__wrapper {
   padding-top: 146px;
-  padding-bottom: 115px;
+  padding-bottom: 66px;
   color: $color-sapphire;
   font-family: $ff-roboto-condensed;
   font-style: normal;
@@ -66,8 +66,8 @@
 
   display: grid;
   grid-template-columns: 1.56fr 1fr 1.56fr;
-  column-gap: 3%;
-  row-gap: 108px;
+  column-gap: 3.3%;
+  row-gap: 112px;
 
   @media (max-width: $tablet-width) {
     padding-left: 0;
@@ -86,7 +86,7 @@
 
 .advantages__value {
   &--plus {
-    padding-right: 5px;
+    padding-right: 2px;
   }
 
   @media (max-width: $mobile-width) {
@@ -97,6 +97,7 @@
 
   p {
     margin: 0;
+    margin-bottom: -4px;
     font-weight: 700;
     font-size: 71px;
     line-height: 64px;
@@ -124,9 +125,9 @@
   padding-left: 27px;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-right: 14px;
+  padding-right: 11px;
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: min-content 1fr;
   column-gap: 9.1%;
 
   @media (max-width: $tablet-width) {
@@ -176,6 +177,11 @@
 
     .advantages__value {
       margin-bottom: 34px;
+
+      p {
+        margin: 0;
+        margin-bottom: 6px;
+      }
 
       @media (max-width: $tablet-width) {
         margin-bottom: 14px;
@@ -240,7 +246,7 @@
 
   h3 {
     margin: 0;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     font-style: normal;
     font-weight: 700;
     font-size: 22px;

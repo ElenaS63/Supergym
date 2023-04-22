@@ -61,6 +61,7 @@
 
   blockquote {
     margin: 0;
+    grid-column: 2/3;
 
     @media (max-width: $mobile-width) {
       grid-column: 1/-1;

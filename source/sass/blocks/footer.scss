@@ -77,7 +77,10 @@
 }
 
 .footer__item {
+  max-width: 100px;
+
   @media (max-width: $mobile-width) {
+    max-width: 100%;
     margin-bottom: 22px;
   }
 }

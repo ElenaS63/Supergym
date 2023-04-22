@@ -6,6 +6,7 @@
 
 .header__nav {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -21,7 +22,6 @@
 }
 
 .header__logo-link {
-  margin-right: auto;
   color: $color-default-white;
 
   svg {
