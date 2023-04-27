@@ -35,12 +35,8 @@
             8-800-555-55-55
           </a>
         </nav>
-      </div>
-    </header>
-    <main>
-      <!-- Промо-блок -->
-      <section class="promo">
-        <div class="container">
+        <!-- Промо-блок -->
+        <section class="promo">
           <div class="promo__content-wrapper">
             <div class="promo__description">
               <h1>Фитнес <br> центр</h1>
@@ -64,15 +60,19 @@
               <picture>
                 <source type="image/webp" media="(max-width: 1199px)"
                   srcset="./img/promo/promo-tablet@1x.webp 1x, ./img/promo/promo-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="./img/promo/promo-desktop@1x.webp 1x, ./img/promo/promo-desktop@2x.webp 2x">
-                <source media="(max-width: 1199px)" srcset="./img/promo/promo-tablet@1x.jpg 1x, ./img/promo/promo-tablet@2x.jpg 2x">
-                <img src="./img/promo/promo-desktop@1x.jpg" srcset="./img/promo/promo-desktop@2x.jpg 2x" width="500" height="556"
-                  alt="Спортсмен в костюме супермена.">
+                <source type="image/webp"
+                  srcset="./img/promo/promo-desktop@1x.webp 1x, ./img/promo/promo-desktop@2x.webp 2x">
+                <source media="(max-width: 1199px)"
+                  srcset="./img/promo/promo-tablet@1x.jpg 1x, ./img/promo/promo-tablet@2x.jpg 2x">
+                <img src="./img/promo/promo-desktop@1x.jpg" srcset="./img/promo/promo-desktop@2x.jpg 2x" width="500"
+                  height="556" alt="Спортсмен в костюме супермена.">
               </picture>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+    </header>
+    <main>
       <!-- Тренажерный зал -->
       <section class="gym">
         <div class="container gym__container">
@@ -91,44 +91,50 @@
                 занятий.
               </span>
             </div>
-            <div class="gym__img-wrapper">
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="./img/gym/gym-mobile@1x.webp 1x, ./img/gym/gym-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1199px)"
-                  srcset="./img/gym/gym-tablet@1x.webp 1x, ./img/gym/gym-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="./img/gym/gym-desktop@1x.webp 1x, ./img/gym/gym-desktop@2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="./img/gym/gym-mobile@1x.jpg 1x, ./img/gym/gym-mobile@2x.jpg 2x">
-                <source media="(max-width: 1199px)" srcset="./img/gym/gym-tablet@1x.jpg 1x, ./img/gym/gym-tablet@2x.jpg 2x">
-                <img src="./img/gym/gym-desktop@1x.jpg" srcset="./img/gym/gym-desktop@2x.jpg 2x" width="660" height="401"
-                  alt="Тренажёрный зал.">
-              </picture>
-            </div>
-            <div class="gym__video-wrapper video" data-video-container>
-              <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank" data-video-link>
-                <div class="video__img-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="./img/video/video-mobile@1x.webp 1x, ./img/video/video-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1199px)"
-                      srcset="./img/video/video-tablet@1x.webp 1x, ./img/video/video-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="./img/video/video-desktop@1x.webp 1x, ./img/video/video-desktop@2x.webp 2x">
-                    <source media="(max-width: 767px)"
-                      srcset="./img/video/video-mobile@1x.jpg 1x, ./img/video/video-mobile@2x.jpg 2x">
-                    <source media="(max-width: 1199px)"
-                      srcset="./img/video/video-tablet@1x.jpg 1x, ./img/video/video-tablet@2x.jpg 2x">
-                    <img src="./img/video/video-desktop@1x.jpg" srcset="./img/video/video-desktop@2x.jpg 2x" width="364"
-                      height="228" alt="Тренажёры.">
-                  </picture>
-                </div>
-              </a>
-              <button class="video__button" aria-label="Запустить воспроизведение видео" data-video-button>
-                <svg aria-hidden="true" focusable="false" width="17" height="17">
-                  <use href="./img/sprite.svg#icon-video"></use>
-                </svg>
-              </button>
-              <div class="video__container" data-video-frame
-              data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1"></div>
+            <div class="gym__media-wrapper">
+              <div class="gym__img-wrapper">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/gym/gym-mobile@1x.webp 1x, ./img/gym/gym-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/gym/gym-tablet@1x.webp 1x, ./img/gym/gym-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/gym/gym-desktop@1x.webp 1x, ./img/gym/gym-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/gym/gym-mobile@1x.jpg 1x, ./img/gym/gym-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/gym/gym-tablet@1x.jpg 1x, ./img/gym/gym-tablet@2x.jpg 2x">
+                  <img src="./img/gym/gym-desktop@1x.jpg" srcset="./img/gym/gym-desktop@2x.jpg 2x" width="660"
+                    height="401" alt="Тренажёрный зал.">
+                </picture>
+              </div>
+              <div class="gym__video-wrapper video" data-video-container>
+                <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank"
+                  data-video-link>
+                  <div class="video__img-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)"
+                        srcset="./img/video/video-mobile@1x.webp 1x, ./img/video/video-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)"
+                        srcset="./img/video/video-tablet@1x.webp 1x, ./img/video/video-tablet@2x.webp 2x">
+                      <source type="image/webp"
+                        srcset="./img/video/video-desktop@1x.webp 1x, ./img/video/video-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)"
+                        srcset="./img/video/video-mobile@1x.jpg 1x, ./img/video/video-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1199px)"
+                        srcset="./img/video/video-tablet@1x.jpg 1x, ./img/video/video-tablet@2x.jpg 2x">
+                      <img src="./img/video/video-desktop@1x.jpg" srcset="./img/video/video-desktop@2x.jpg 2x"
+                        width="364" height="228" alt="Тренажёры.">
+                    </picture>
+                  </div>
+                </a>
+                <button class="video__button" aria-label="Запустить воспроизведение видео" data-video-button>
+                  <svg aria-hidden="true" focusable="false" width="17" height="17">
+                    <use href="./img/sprite.svg#icon-video"></use>
+                  </svg>
+                </button>
+                <div class="video__container" data-video-frame
+                  data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -141,8 +147,10 @@
             <div class="catalog__tabs" data-tabs="parent">
               <div class="catalog__controls" data-tabs="controls">
                 <button class="catalog__control btn" type="button" data-tabs="control" data-index="0">1 месяц</button>
-                <button class="catalog__control catalog__control--center btn" type="button" data-tabs="control" data-index="1">6 месяцев</button>
-                <button class="catalog__control btn" type="button" data-tabs="control" data-index="2">12 месяцев</button>
+                <button class="catalog__control catalog__control--center btn" type="button" data-tabs="control"
+                  data-index="1">6 месяцев</button>
+                <button class="catalog__control btn" type="button" data-tabs="control" data-index="2">12
+                  месяцев</button>
               </div>
               <div class="catalog__content" data-tabs="content">
                 <ul class="catalog__list" data-tabs="element">
@@ -238,11 +246,12 @@
               <picture>
                 <source type="image/webp" media="(max-width: 1199px)"
                   srcset="./img/catalog/catalog-tablet@1x.webp 1x, ./img/catalog/catalog-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="./img/catalog/catalog-desktop@1x.webp 1x, ./img/catalog/catalog-desktop@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/catalog/catalog-desktop@1x.webp 1x, ./img/catalog/catalog-desktop@2x.webp 2x">
                 <source media="(max-width: 1199px)"
                   srcset="./img/catalog/catalog-tablet@1x.png 1x, ./img/catalog/catalog-tablet@2x.png 2x">
-                <img src="./img/catalog/catalog-desktop@1x.png" srcset="./img/catalog/catalog-desktop@2x.png 2x" width="287"
-                  height="494" alt="Блины для гантелей." loading="lazy">
+                <img src="./img/catalog/catalog-desktop@1x.png" srcset="./img/catalog/catalog-desktop@2x.png 2x"
+                  width="287" height="494" alt="Блины для гантелей." loading="lazy">
               </picture>
             </div>
           </div>
@@ -278,11 +287,14 @@
                   srcset="./img/event/event-mobile@1x.webp 1x, ./img/event/event-mobile@2x.webp 2x">
                 <source type="image/webp" media="(max-width: 1199px)"
                   srcset="./img/event/event-tablet@1x.webp 1x, ./img/event/event-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="./img/event/event-desktop@1x.webp 1x, ./img/event/event-desktop@2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="./img/event/event-mobile@1x.jpg 1x, ./img/event/event-mobile@2x.jpg 2x">
-                <source media="(max-width: 1199px)" srcset="./img/event/event-tablet@1x.jpg 1x, ./img/event/event-tablet@2x.jpg 2x">
-                <img src="./img/event/event-desktop@1x.jpg" srcset="./img/event/event-desktop@2x.jpg 2x" width="660" height="500"
-                  alt="Спортивный парень с голым торсом выбивает пыль из коврика" loading="lazy">
+                <source type="image/webp"
+                  srcset="./img/event/event-desktop@1x.webp 1x, ./img/event/event-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="./img/event/event-mobile@1x.jpg 1x, ./img/event/event-mobile@2x.jpg 2x">
+                <source media="(max-width: 1199px)"
+                  srcset="./img/event/event-tablet@1x.jpg 1x, ./img/event/event-tablet@2x.jpg 2x">
+                <img src="./img/event/event-desktop@1x.jpg" srcset="./img/event/event-desktop@2x.jpg 2x" width="660"
+                  height="500" alt="Спортивный парень с голым торсом выбивает пыль из коврика" loading="lazy">
               </picture>
             </div>
           </div>
@@ -569,13 +581,14 @@
                       srcset="./img/sale/sale-mobile@1x.webp 1x, ./img/sale/sale-mobile@2x.webp 2x">
                     <source type="image/webp" media="(max-width: 1199px)"
                       srcset="./img/sale/sale-tablet@1x.webp 1x, ./img/sale/sale-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="./img/sale/sale-desktop@1x.webp 1x, ./img/sale/sale-desktop@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="./img/sale/sale-desktop@1x.webp 1x, ./img/sale/sale-desktop@2x.webp 2x">
                     <source media="(max-width: 767px)"
                       srcset="./img/sale/sale-mobile@1x.jpg 1x, ./img/sale/sale-mobile@2x.jpg 2x">
                     <source media="(max-width: 1199px)"
                       srcset="./img/sale/sale-tablet@1x.jpg 1x, ./img/sale/sale-tablet@2x.jpg 2x">
-                    <img src="./img/sale/sale-desktop@1x.jpg" srcset="./img/sale/sale-desktop@2x.jpg 2x" width="399" height="462"
-                      alt="Девушка в спортивном костюме." loading="lazy">
+                    <img src="./img/sale/sale-desktop@1x.jpg" srcset="./img/sale/sale-desktop@2x.jpg 2x" width="399"
+                      height="462" alt="Девушка в спортивном костюме." loading="lazy">
                   </picture>
                 </div>
               </div>
@@ -688,7 +701,7 @@
                 <dd>г. Омск, ул. 60 лет Октября, 7</dd>
               </dl>
             </li>
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--tel">
               <dl>
                 <dt>Телефон:</dt>
                 <dd>
