@@ -111,15 +111,17 @@
   }
 }
 
-.gym__img-wrapper {
+.gym__media-wrapper {
+  position: relative;
   place-self: start end;
 
   @media (max-width: $tablet-width) {
     width: 100%;
     place-self: center;
   }
+}
 
-
+.gym__img-wrapper {
   img {
     object-fit: cover;
     height: 100%;
@@ -131,13 +133,13 @@
   position: absolute;
   width: 364px;
   height: 228px;
-  top: 54%;
-  left: 37.5%;
+  top: 72%;
+  left: -9.5%;
 
   @media (max-width: $tablet-width) {
-    width: 266px;
-    height: 167px;
-    top: 68.7%;
+    width: 39.2%;
+    height: 48.7%;
+    top: 75.7%;
     left: 30.4%;
   }
 
@@ -147,7 +149,7 @@
     height: auto;
     top: 0;
     left: 0;
-    padding-top: 16px;
+    padding-top: 40px;
   }
 
   img {

@@ -1,7 +1,19 @@
+.video__container {
+  iframe {
+    width: 100%;
+    border: none;
+
+    @media (max-width: $tablet-width) {
+      height: auto;
+      aspect-ratio: 1.59 / 1;
+    }
+  }
+}
+
 .video__button {
   position: absolute;
-  top: 34.5%;
-  right: 38.9%;
+  top: 34%;
+  right: 40%;
   width: 72px;
   height: 72px;
   border: none;
@@ -11,15 +23,18 @@
   user-select: none;
 
   @media (max-width: $tablet-width) {
-    top: 34%;
-    right: 40.2%;
     width: 52px;
     height: 52px;
+    right: 41%;
   }
 
   @media (max-width: $mobile-width) {
-    top: 39.7%;
-    right: 41.4%;
+    right: 45%;
+    top: 47%;
+  }
+
+  @media (max-width: $mobile-medium-width) {
+    right: 41.5%;
   }
 
   &:hover {
@@ -40,9 +55,16 @@
   }
 
   svg {
+    transform: translate(3px, 2px);
+
     @media (max-width: $tablet-width) {
+      transform: translate(3px, 1px);
       width: 12px;
       height: 12px;
+    }
+
+    @media (max-width: $mobile-width) {
+      transform: translate(2px, 0.5px);
     }
   }
 
@@ -51,8 +73,8 @@
     content: "";
     width: 100px;
     height: 100px;
-    top: -19%;
-    left: -16%;
+    top: -20%;
+    left: -18%;
     border-radius: 50%;
     border: 2px solid rgba($color-cobalt, 0.2);
     background-image: $video-red-to-blue;

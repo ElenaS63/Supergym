@@ -230,6 +230,8 @@
   }
 
   span {
+    margin-bottom: 10px;
+
     @media (max-width: $tablet-width) {
       letter-spacing: 0.01em;
     }

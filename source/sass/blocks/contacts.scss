@@ -140,6 +140,14 @@
     }
   }
 
+  &--tel {
+    max-width: 100px;
+
+    @media (max-width: $tablet-width) {
+      max-width: 130px;
+    }
+  }
+
   dt {
     margin-bottom: 2px;
     font-weight: 700;

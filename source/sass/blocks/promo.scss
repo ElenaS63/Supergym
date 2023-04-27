@@ -1,13 +1,12 @@
 .promo {
-  min-height: 658px;
-  background-image: $promo-red-to-blue;
+  padding-bottom: 52px;
 
   @media (max-width: $tablet-width) {
-    min-height: 554px;
+    padding-bottom: 81px;
   }
 
   @media (max-width: $mobile-width) {
-    min-height: 491px;
+    padding-bottom: 78px;
   }
 }
 
@@ -17,18 +16,15 @@
   column-gap: 5.5%;
   row-gap: 10px;
   padding-left: 19px;
-  padding-top: 51px;
-  padding-bottom: 51px;
+  margin-top: -32px;
 
   @media (max-width: $tablet-width) {
     padding-left: 0;
-    padding-top: 82px;
-    padding-bottom: 81px;
+    margin-top: 0;
     column-gap: 30px;
   }
 
   @media (max-width: $mobile-width) {
-    padding-bottom: 78px;
     grid-template-columns: 1fr;
   }
 }
@@ -50,6 +46,7 @@
   @media (max-width: $mobile-width) {
     width: 100%;
     grid-template-columns: 113px 1fr;
+    margin-top: 20px;
   }
 
   h1 {
