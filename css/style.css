@@ -2902,33 +2902,47 @@ dl {
   object-fit: cover;
 }
 
-.comments__button {
-  color: #afafaf;
+.comments__button::before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #afafaf;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .comments__button--prev {
-  left: 2px;
+  left: 4px;
 }
 
 .comments__button--next {
-  right: 2px;
+  right: 4px;
 }
 
+.comments__button--next::before {
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.comments__button:focus,
 .comments__button:hover {
-  color: #003d85;
-  opacity: 0.7;
-}
-
-.comments__button:focus-visible {
   outline: none;
-  -webkit-box-shadow: 0 0 0 2px #ed0233;
-  box-shadow: 0 0 0 2px #ed0233;
 }
 
-.comments__button:active {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  opacity: 1;
+.comments__button:focus::before,
+.comments__button:hover::before {
+  border-bottom: 1px solid #003d85;
+  border-left: 1px solid #003d85;
+}
+
+.comments__button:active::before {
+  border-bottom: 1px solid #ed0233;
+  border-left: 1px solid #ed0233;
 }
 
 .contacts {
@@ -3755,11 +3769,11 @@ dl {
   }
 
   .comments__button--prev {
-    left: 43px;
+    left: 47px;
   }
 
   .comments__button--next {
-    right: 43px;
+    right: 47px;
   }
 
   .contacts {
@@ -4375,12 +4389,17 @@ dl {
     height: 68px;
   }
 
+  .comments__button::before {
+    width: 14px;
+    height: 14px;
+  }
+
   .comments__button--prev {
-    left: 11px;
+    left: 10px;
   }
 
   .comments__button--next {
-    right: 11px;
+    right: 10px;
   }
 
   .contacts__form-wrapper {
